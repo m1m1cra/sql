@@ -14,7 +14,7 @@
 
 ![screen](tmp/pk.png)
 
-4. Задание 4. Выполните SQL-запрос к учебной базе данных dvd-rental “SELECT * FROM country;”. Сделайте скриншот результата.
+#### Задание 4. Выполните SQL-запрос к учебной базе данных dvd-rental “SELECT * FROM country;”. Сделайте скриншот результата.
 
 ![screen](tmp/sql.png)
 
