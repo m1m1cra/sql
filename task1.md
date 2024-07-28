@@ -12,6 +12,17 @@
 
 #### Задание 3. Перечислите все таблицы учебной базы данных dvd-rental и столбцы, которые имеют ограничения первичных ключей для этих таблиц. Запишите решение в формате [таблицы](https://letsdocode.ru/sql-main/1-3.png):
 
+В данной таске звучит "перечислить СТОЛБЦЫ", т.е аттрибуты, поэтому я вывел не только сами названия pkeys, но и поля с помощью следующего запроса
+
+```sql
+select  
+  TABLE_NAME, 
+  COLUMN_NAME,
+  CONSTRAINT_NAME
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE table_schema = 'public' and constraint_name ilike '%pkey'
+```
+
 ![screen](tmp/pk.png)
 
 #### Задание 4. Выполните SQL-запрос к учебной базе данных dvd-rental “SELECT * FROM country;”. Сделайте скриншот результата.
